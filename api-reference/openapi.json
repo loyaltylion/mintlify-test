@@ -133,9 +133,7 @@
   "components": {
     "schemas": {
       "Plant": {
-        "required": [
-          "name"
-        ],
+        "required": ["name"],
         "type": "object",
         "properties": {
           "name": {
@@ -145,6 +143,11 @@
           "tag": {
             "description": "Tag to specify the type",
             "type": "string"
+          },
+          "kind": {
+            "description": "Kind of plant",
+            "type": "string",
+            "nullable": true
           }
         }
       },
@@ -154,9 +157,7 @@
             "$ref": "#/components/schemas/Plant"
           },
           {
-            "required": [
-              "id"
-            ],
+            "required": ["id"],
             "type": "object",
             "properties": {
               "id": {
@@ -169,10 +170,7 @@
         ]
       },
       "Error": {
-        "required": [
-          "error",
-          "message"
-        ],
+        "required": ["error", "message"],
         "type": "object",
         "properties": {
           "error": {
