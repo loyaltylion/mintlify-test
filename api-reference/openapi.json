@@ -67,8 +67,7 @@
                                     "position": { "type": ["number"] },
                                     "hidden": { "type": ["boolean"] },
                                     "kind": {
-                                      "type": ["string"],
-                                      "enum": ["boundary"]
+                                      "const": "boundary"
                                     },
                                     "bounds": {
                                       "type": ["object"],
@@ -94,8 +93,7 @@
                                     "position": { "type": ["number"] },
                                     "hidden": { "type": ["boolean"] },
                                     "kind": {
-                                      "type": ["string"],
-                                      "enum": ["conditional"]
+                                      "const": "conditional"
                                     }
                                   },
                                   "required": [
